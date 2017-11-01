@@ -1,0 +1,29 @@
+
+<div class="container">
+  <h2>CUSTOMERS LIST</h2>
+                                                                                      
+  <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+          <th>Id</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        <th>Username</th>
+        <th>Password</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="cust in customers">
+         <td>{{ cust.id }}</td>
+        <td>{{ cust.firstname }}</td>
+        <td>{{ cust.lastname }}</td>
+        <td>{{ cust.email }}</td>
+        <td>{{ cust.username }}</td>
+        <td>{{ cust.password }}</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
